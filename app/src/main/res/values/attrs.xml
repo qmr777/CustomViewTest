@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="string" format="string"/>
+    <attr name="edge_length" format="dimension"/>
+    <attr name="circle_color" format="color"/>
+    
+    <declare-styleable name="CustomView2">
+        <attr name="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProcessBar">
+        <attr name="circle_color"/>
+    </declare-styleable>
+</resources>

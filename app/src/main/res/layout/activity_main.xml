@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qmr777.customview.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+<!--    <com.qmr777.customview.myView.MyImgView
+        android:id="@+id/iv_myiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"/>-->
+
+    <com.qmr777.customview.myView.MyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/btn"/>
+
+    <com.qmr777.customview.myView.CustomView1
+        android:id="@+id/customView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qmr777.customview.myView.CustomView2
+        android:id="@+id/customView_2"
+        custom:string="1234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.qmr777.customview.myView.MyProcessBar
+        android:id="@+id/myProcessBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.qmr777.customview.myView.CircleProcessBar
+        android:id="@+id/circleProcessBar"
+        custom:circle_color="@color/colorPrimaryDark"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.qmr777.customview.myView.MyImgView2
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_dark"
+        android:id="@+id/myImgView2"
+        android:src="@drawable/dog2"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <com.qmr777.customview.myView.ZoomImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/screen"/>-->
+
+</LinearLayout>
